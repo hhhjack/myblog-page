@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content='ie=edge'>
+   <title>Document</title>
+   <link rel="stylesheet" href="./../../css/bootstrap.min.css">
+   <link rel="stylesheet" href="./../../css/register.css">
+   <script src="./../../js/jquery.min.js"></script>
+   <script src="./../../js/bootstrap.min.js"></script>
+   <script src="./../../js/register.js"></script>
+</head>
+<body>
+   <div class="container">
+       <form class="box" enctype="multipart/form-data">
+           <p><span>用户名:</span>  <input type="text" name="username" /></p>
+           <p><span>邮箱:</span> <input type="text" name="email" /></p>
+           <p><span>密码:</span> <input type="password" name="password" /></p>
+           <p><span>上传头像:</span> <input type="file" name="photo" accept="image/jpeg, image/jpg" onchange="changeImg(this)" /></p> 
+           <img class="img" src="" alt="">
+           <button type="submit" value="Submit" class="reg" >注册</button>
+           <p id="addmsg" style="color: #9E2A2B"></p>
+       </form>
+   </div>
+</body>
+</html>

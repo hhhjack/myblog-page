@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./../../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./../../css/detail.css">
+    <script src="./../../js/jquery.min.js"></script>
+    <script src="./../../js/bootstrap.min.js"></script>
+    <script src="./../../js/detail.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="home"><img class="img" src="./../../img/home.png" alt=""></div> 
+        <div><p class="title"></p></div>
+        <div><p class="time"></p></div>
+        <div>作者: <span class="author"></span></div>
+        <div class="row col-xs-11 col-sm-11 col-md-11 col-lg-11 center-block">
+            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1"> 
+                <p class="content"></p>
+            </div>
+            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn-box">
+                <button class="edit btn-item" data-toggle="modal" data-target="#myModal">
+                    编辑
+                </button>
+                <div><button class="del btn-item">删除</button></div>
+            </div>
+        </div>
+
+        <div class="comment-list">
+            <!-- <div class="comment-item col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                <div class="user col-xs-10 col-sm-10 col-md-10 col-lg-10">user: hhhjack</div>
+                <div class="time">2020/3/12</div>
+                <div class="message">hhhhhhhhh, hello</div>
+            </div> -->
+        </div>
+        <div class="comment-btn">
+            <input class="comment-input" type="text" placeholder="发表你的评论">
+            <button class="send">发送</button>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content pop">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        编辑文章
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <div>标题：<input type="text" class="edit-title"></div>
+                    <div>内容：<input type="text" class="edit-content"></div>
+                    <p class="wrong-msg"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary edit-submit">提交更改</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
+
+</body>
+</html>
